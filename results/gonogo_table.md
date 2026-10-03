@@ -1,0 +1,34 @@
+| Scenario | Headroom B0→best | B2T gap to best | Best untuned baseline gap | B2T* gap | Precision-aware vs best baseline | Best policy found |
+|---|---|---|---|---|---|---|
+| T1-sym-R1 | 1.4% | +0.7% | B2 +0.7% | +0.0% | A1W 0.7% lower | marginal, wait-subset, cut=[5, 5] |
+| T2-size-R1 | 1.7% | +1.5% | B2 +1.0% | +0.0% | A1W 0.9% lower | throughput, myopic-subset, cut=[14, None] |
+| T3-weight-R1 | 2.2% | +1.6% | B2 +1.5% | +0.7% | A1W 1.5% lower | throughput, wait-subset, cut=[2, 5] |
+| T4-link-R1 | 1.3% | +0.7% | B2 +0.6% | +0.0% | A1W 0.6% lower | throughput, wait-subset, cut=[5, 4] |
+| T5-conflict-R1 | 1.1% | +0.4% | B2T +0.4% | +0.0% | A1W 0.4% lower | throughput, myopic-subset, cut=[14, 24] |
+| T6-drift-R1 | 2.4% | +1.8% | B2 +1.8% | +0.8% | A1W 1.7% lower | throughput, wait-subset, cut=[2, 5] |
+| T7-sym-Q6-R1 | 1.8% | +1.4% | B2T +1.4% | +0.0% | A1W 1.4% lower | throughput, wait-subset, cut=[5, 5] |
+| T8-quality-R1 | 1.6% | +1.5% | B2 +1.3% | +0.5% | A1W 1.3% lower | throughput, wait-subset, cut=[1, 7] |
+| T9-weight-Q2-R1 | 0.6% | +0.6% | B2 +0.6% | +0.2% | A1 0.6% lower | throughput, myopic-subset, cut=[2, 20] |
+| T10-conflict-Q3-R1 | 0.7% | +0.0% | B2T +0.0% | +0.0% | A1W 0.0% lower | throughput, full+thr, cut=[14, 6] |
+| T1-sym-R2 | 6.0% | +0.6% | B3 +0.5% | +0.1% | A1W 0.5% lower | marginal, wait-subset, cut=[4, 4] |
+| T2-size-R2 | 6.3% | +2.8% | B2 +2.4% | +0.0% | A1 2.3% lower | throughput, myopic-subset, cut=[11, None] |
+| T3-weight-R2 | 9.1% | +4.1% | B3 +4.0% | +2.8% | A1W 3.9% lower | throughput, wait-subset, cut=[2, 4] |
+| T4-link-R2 | 5.5% | +0.5% | B2 +0.5% | +0.0% | A1W 0.5% lower | throughput, wait-subset, cut=[4, 2] |
+| T5-conflict-R2 | 4.0% | +1.6% | B2 +1.6% | +0.0% | A1 1.5% lower | throughput, myopic-subset, cut=[11, 16] |
+| T6-drift-R2 | 9.9% | +5.2% | B3 +5.0% | +3.6% | A1W 4.8% lower | throughput, wait-subset, cut=[2, 4] |
+| T7-sym-Q6-R2 | 7.3% | +1.8% | B2 +1.8% | +0.0% | A1W 1.7% lower | marginal, wait-subset, cut=[4, 4] |
+| T8-quality-R2 | 6.6% | +3.6% | B2 +3.1% | +1.6% | A1W 3.0% lower | throughput, wait-subset, cut=[1, 4] |
+| T9-weight-Q2-R2 | 2.2% | +2.2% | B2 +2.2% | +0.8% | A1 2.2% lower | throughput, myopic-subset, cut=[2, None] |
+| T10-conflict-Q3-R2 | 2.5% | +0.0% | B2T +0.0% | +0.0% | A1W 0.0% lower | throughput, full+thr, cut=[11, None] |
+| T1-sym-R3 | 14.6% | +0.5% | B3 +0.2% | +0.2% | A1W 0.2% lower | marginal, wait-subset, cut=[2, 2] |
+| T2-size-R3 | 14.0% | +3.3% | B3 +3.2% | +0.0% | A1 3.1% lower | throughput, myopic-subset, cut=[22, None] |
+| T3-weight-R3 | 20.2% | +7.6% | B3 +7.3% | +5.8% | A1W 6.8% lower | throughput, wait-subset, cut=[1, 2] |
+| T4-link-R3 | 12.1% | +0.2% | B2 +0.2% | +0.0% | A1W 0.1% lower | throughput, wait-subset, cut=[2, 4] |
+| T5-conflict-R3 | 9.6% | +4.7% | B4 +1.1% | +0.9% | A1W 1.1% lower | marginal, wait-subset, cut=[22, 4] |
+| T6-drift-R3 | 22.3% | +10.7% | B3 +10.0% | +8.3% | A1W 9.1% lower | throughput, wait-subset, cut=[1, 2] |
+| T7-sym-Q6-R3 | 17.3% | +1.2% | B3 +1.1% | +0.1% | A1W 1.1% lower | marginal, wait-subset, cut=[2, 2] |
+| T8-quality-R3 | 14.0% | +4.5% | B3 +4.3% | +3.1% | A1W 4.2% lower | throughput, wait-subset, cut=[1, 2] |
+| T9-weight-Q2-R3 | 4.9% | +5.2% | B2 +5.2% | +1.9% | A1 4.9% lower | throughput, myopic-subset, cut=[1, None] |
+| T10-conflict-Q3-R3 | 5.3% | +0.0% | B2 +0.0% | +0.0% | A1 0.0% lower | throughput, full+thr, cut=[11, None] |
+| T1-sym-fastdrift-R2 | 5.7% | +0.8% | B3 +0.7% | +0.1% | A1W 0.7% lower | marginal, wait-subset, cut=[2, 3] |
+| T3-weight-fastdrift-R2 | 9.1% | +4.6% | B3 +4.5% | +3.3% | A1W 4.3% lower | throughput, wait-subset, cut=[2, 3] |
